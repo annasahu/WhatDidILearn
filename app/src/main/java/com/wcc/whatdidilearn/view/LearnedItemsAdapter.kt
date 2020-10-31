@@ -28,7 +28,8 @@ class LearnedItemsAdapter: RecyclerView.Adapter<LearnedItemsAdapter.LearnedItemV
     }
 
     override fun onBindViewHolder(holder: LearnedItemViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        val itemLearnedToShow: ItemLearned = data.get(position)
+        holder.bind(itemLearnedToShow.title, itemLearnedToShow.description, itemLearnedToShow.understandingLevel.color)
     }
 
     override fun getItemCount(): Int {
