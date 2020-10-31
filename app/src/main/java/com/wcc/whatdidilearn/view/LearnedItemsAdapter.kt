@@ -1,5 +1,6 @@
 package com.wcc.whatdidilearn.view
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
@@ -24,7 +25,10 @@ class LearnedItemsAdapter: RecyclerView.Adapter<LearnedItemsAdapter.LearnedItemV
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LearnedItemViewHolder {
-        TODO("Not yet implemented")
+        val layoutInflater = LayoutInflater.from(parent.context)
+        val itemView = layoutInflater.inflate(R.layout.item_learned, parent, false)
+
+        return LearnedItemViewHolder(itemView)
     }
 
     override fun onBindViewHolder(holder: LearnedItemViewHolder, position: Int) {
