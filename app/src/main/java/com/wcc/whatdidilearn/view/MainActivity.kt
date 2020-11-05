@@ -26,5 +26,7 @@ class MainActivity : AppCompatActivity() {
         itemsList.observe(this, Observer { items ->
             adapter.data = items
         })
+
+        val fabButton = binding.fab
     }
 }
