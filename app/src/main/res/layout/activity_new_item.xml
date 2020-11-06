@@ -9,13 +9,13 @@
     <TextView
         android:id="@+id/item_title"
         android:text="@string/item_title"
-        app:layout_constraintBottom_toTopOf="@+id/box_item_title"
+        app:layout_constraintBottom_toTopOf="@+id/boxItemTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         style="@style/title_style" />
 
     <EditText
-        android:id="@+id/box_item_title"
+        android:id="@+id/boxItemTitle"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
@@ -31,13 +31,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/item_description"
-        app:layout_constraintBottom_toTopOf="@+id/box_item_description"
+        app:layout_constraintBottom_toTopOf="@+id/boxItemDescription"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box_item_title"
+        app:layout_constraintTop_toBottomOf="@+id/boxItemTitle"
         style="@style/title_style" />
 
     <EditText
-        android:id="@+id/box_item_description"
+        android:id="@+id/boxItemDescription"
         android:layout_width="0dp"
         android:layout_height="86dp"
         android:layout_marginTop="60dp"
@@ -47,15 +47,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box_item_title" />
+        app:layout_constraintTop_toBottomOf="@+id/boxItemTitle" />
 
     <Button
-        android:id="@+id/add_button"
+        android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/container_padding"
         android:text="@string/save_button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/box_item_description" />
+        app:layout_constraintTop_toBottomOf="@+id/boxItemDescription" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

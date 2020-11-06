@@ -16,20 +16,20 @@ class LearnedItemsAdapter: RecyclerView.Adapter<LearnedItemsAdapter.LearnedItemV
         }
 
     inner class LearnedItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val titleItem: TextView = itemView.findViewById(R.id.itemTitle)
-        val descriptionItem: TextView = itemView.findViewById(R.id.itemDescription)
-        val levelItem: View = itemView.findViewById(R.id.itemLevel)
+        val itemTitle: TextView = itemView.findViewById(R.id.itemTitle)
+        val itemDescription: TextView = itemView.findViewById(R.id.itemDescription)
+        val itemLevel: View = itemView.findViewById(R.id.itemLevel)
 
         fun bind(title: String, description: String, color: Int) {
-            titleItem.text = title
-            descriptionItem.text = description
-            levelItem.setBackgroundResource(color)
+            itemTitle.text = title
+            itemDescription.text = description
+            itemLevel.setBackgroundResource(color)
         }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LearnedItemViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val itemView = layoutInflater.inflate(R.layout.item_learned, parent, false)
+        val itemView = layoutInflater.inflate(R.layout.item_learned, parent, false) as View
 
         return LearnedItemViewHolder(itemView)
     }
