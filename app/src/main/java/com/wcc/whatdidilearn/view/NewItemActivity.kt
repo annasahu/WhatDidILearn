@@ -1,8 +1,10 @@
 package com.wcc.whatdidilearn.view
 
 import android.content.Intent
+import android.opengl.ETC1.isValid
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import androidx.lifecycle.ViewModelProvider
 import com.wcc.whatdidilearn.data.DatabaseItems
 import com.wcc.whatdidilearn.databinding.ActivityNewItemBinding
@@ -27,8 +29,8 @@ class NewItemActivity : AppCompatActivity() {
         val viewModel = ViewModelProvider(this, viewModelFactory).get(NewLearnedItemViewModel::class.java)
 
         binding.saveButton.setOnClickListener {
-            val title = binding.boxItemTitle.text.toString()
-            val description = binding.boxItemDescription.text.toString()
+            val title = (binding.boxItemTitle.text.toString())
+            val description = (binding.boxItemDescription.text.toString())
 
             viewModel.insertNewLearnedItem(title, description)
 

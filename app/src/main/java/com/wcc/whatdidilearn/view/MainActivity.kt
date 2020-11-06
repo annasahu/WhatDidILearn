@@ -7,6 +7,8 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.wcc.whatdidilearn.data.DatabaseItems
 import com.wcc.whatdidilearn.databinding.ActivityMainBinding
+import com.wcc.whatdidilearn.databinding.ActivityNewItemBinding
+import com.wcc.whatdidilearn.databinding.ItemLearnedBinding
 import com.wcc.whatdidilearn.repository.LearnedItemsRepository
 import com.wcc.whatdidilearn.viewmodel.LearnedItemViewModel
 import com.wcc.whatdidilearn.viewmodel.LearnedItemViewModelFactory
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, NewItemActivity::class.java)
             startActivity(intent)
         }
+
     }
 
     //ADICIONAR BOTÃO DE EXCLUIR PARA CADA ITEM

@@ -1,11 +1,14 @@
 package com.wcc.whatdidilearn.viewmodel
 
+import android.text.TextUtils
+import android.widget.EditText
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.wcc.whatdidilearn.data.LearnedItemDao
 import com.wcc.whatdidilearn.entities.LearnedItem
 import com.wcc.whatdidilearn.entities.Level
 import com.wcc.whatdidilearn.repository.LearnedItemsRepository
+import com.wcc.whatdidilearn.view.NewItemActivity
 import kotlinx.coroutines.launch
 
 class NewLearnedItemViewModel(private var repository: LearnedItemsRepository): ViewModel() {
@@ -18,9 +21,5 @@ class NewLearnedItemViewModel(private var repository: LearnedItemsRepository): V
     }
 
     //DESAFIO 1) NÃO DEIXAR CRIAR COM VAZIO
-    //private fun isValid(itemTitle: String, itemDescription:String): Boolean {
-     //   if(isValid){
-       //     viewModel.insertNe
-        //}
-    //}
+
 }

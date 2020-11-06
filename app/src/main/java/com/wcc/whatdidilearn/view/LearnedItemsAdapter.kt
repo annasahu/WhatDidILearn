@@ -43,4 +43,9 @@ class LearnedItemsAdapter: RecyclerView.Adapter<LearnedItemsAdapter.LearnedItemV
         return data.size
     }
 
+    fun getRemoveItemPosition() : Int {
+        var position = removedPosition
+        return position;
+    }
+
 }
